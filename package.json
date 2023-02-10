@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node src/server",
     "dev": "nodemon src/server"
-  
   },
   "keywords": [
     "api",
@@ -17,5 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
