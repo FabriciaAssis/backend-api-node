@@ -1,13 +1,13 @@
-const express = require('express')
-const mysql = require('mysql')
+import express from 'express'
+
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.json({message: "Entrou na rota /user com GET!"})
+  res.json({ message: "Entrou na rota /user com GET!" })
 })
 
 router.post('/', (req, res) => {
-  res.json({message: "Entrou na rota /user user com POST!"})
+  res.json({ message: "Entrou na rota /user com POST!" })
 })
 
-module.exports = router
+export default router
