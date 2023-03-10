@@ -2,11 +2,12 @@
 import express from 'express'
 import courseRoutes from './routes/courseRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+import { SERVER } from './config.js'
 //const courseRoutes = require('./routes/courseRoutes')
 //const userRoutes = require('./routes/userRoutes')
 
 const app = express()
-const port = 3100
+const port = SERVER.PORT
 
 app.use(express.json())
 
