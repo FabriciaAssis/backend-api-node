@@ -70,4 +70,4 @@ export const updateCourse = (course, callback) => {
   })
 }
 
-export default { listAllCourses, showCourse, createCourse, deleteCourse, updateCourse }
+export default { listAllCourses, showuser: showCourse, createUser: createCourse, deleteCourse, updateCourse }

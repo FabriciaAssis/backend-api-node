@@ -12,7 +12,7 @@ export const listAllCourses = (req, res) => {
 export const showCourse = (req, res) => {
   const id = req.params.id
 
-  courseModel.showCourse(id, (error, result) => {
+  courseModel.showuser(id, (error, result) => {
     if (error)
       res.status(500).json({ message: "Erro no Banco de Dados" })
     if (result)
@@ -23,7 +23,7 @@ export const showCourse = (req, res) => {
 export const createCourse = (req, res) => {
   const course = req.body
   //TODO Verificar se os dados são válidos
-  courseModel.createCourse(course, (error, result) => {
+  courseModel.createUser(course, (error, result) => {
     if (error)
       res.status(500).json({ message: "Erro no Banco de Dados" })
     if (result)
